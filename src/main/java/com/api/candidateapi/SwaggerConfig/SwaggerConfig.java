@@ -23,7 +23,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
                 .select()
 
-                .apis(RequestHandlerSelectors.basePackage("com.Craft.craftcandidatesproject.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.api.candidateapi.Controller"))
 
                 .build();
 
