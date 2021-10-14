@@ -10,13 +10,7 @@ import java.util.*;
 @RestController
 @RequestMapping(value = "api/v1")
 public class Candidate {
-    @GetMapping("/")
 
-    public String printhello(){
-
-        return "Test the api work";
-    }
-    /*
 @Autowired
    private  CandidateService candidateService;
 
@@ -81,7 +75,5 @@ this.candidateService.deleteCandidatesById(id);
  }
 
 
-}*/
-
-
+}
 }
