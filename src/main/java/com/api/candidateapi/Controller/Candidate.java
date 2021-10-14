@@ -10,14 +10,7 @@ import java.util.*;
 @RestController
 @RequestMapping(value = "api/v1")
 public class Candidate {
- @GetMapping("/")
-    public String  Candidates() {
 
-        return "hi test";
-
-    }
-    
-    /*
     @Autowired
     private CandidateService candidateService;
 
@@ -82,6 +75,6 @@ public class Candidate {
         }
 
 
-    }*/
+ 
 
 }
