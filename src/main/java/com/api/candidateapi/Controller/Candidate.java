@@ -1,7 +1,7 @@
-package com.api.candidateapi.Controller;
-import  org.springframework.beans.factory.annotation.Autowired;
-import com.api.candidateapi.Model.Candidates;
-import com.api.candidateapi.Service.CandidateService;
+package com.Craft.craftcandidatesproject.controller;
+
+import com.Craft.craftcandidatesproject.model.Candidates;
+import com.Craft.craftcandidatesproject.service.CandidateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -10,24 +10,30 @@ import java.util.*;
 @RestController
 @RequestMapping(value = "api/v1")
 public class Candidate {
+    @GetMapping("/")
 
-    @Autowired
-    private CandidateService candidateService;
+    public String printhello(){
+
+        return "Test the api work";
+    }
+    /*
+@Autowired
+   private  CandidateService candidateService;
 
     @GetMapping("/")
     public List<Candidates> Candidates( ) {
 
-        return candidateService.getAllCandidatess();
+    return candidateService.getAllCandidatess();
 
-    }
+}
 
     @PostMapping("/candidate")
 
     public String AddCandidate(@ModelAttribute("candidates") Candidates candidates){
 
-        candidateService.saveCandidates(candidates);
-        return  " New Candidate Successfully Added";
-    }
+     candidateService.saveCandidates(candidates);
+    return  " New Candidate Successfully Added";
+}
 
     @PutMapping("/candidate/{id}")
 
@@ -57,23 +63,25 @@ public class Candidate {
         return candidateService.getCandidateById(id);
     }
 
-    @DeleteMapping("/candidate/{id}")
+@DeleteMapping("/candidate/{id}")
 
     public String DeleteCandidate(@PathVariable (value = "id") long id  ){
 
-        this.candidateService.deleteCandidatesById(id);
+this.candidateService.deleteCandidatesById(id);
 
-        if (true){
-            return " Candidate Successfully Deleted  id->" + "" + id;
-        }
+ if (true){
+     return " Candidate Successfully Deleted  id->" + "" + id;
+ }
 
-        else{
-
-
-            return "";
-
-        }
+ else{
 
 
-    }
+  return "";
+
+ }
+
+
+}*/
+
+
 }
